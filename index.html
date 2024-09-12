@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GVP Data Science Club">
+    <meta name="keywords" content="GVP, Data Science, Club, Events">
+    <meta name="author" content="Bhanu Sri">
+    <title>Data Science Club</title>
+        <meta name="language" content="english">
+        <meta name="Data Science Club"/>
+        <meta name="author" content="Data Science"> 
+        <meta name="robots" content="index,follow" />
+        <meta name="rating" content="safe for kids">
+        <meta name="copyright" content="Copyright 2024">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="referrer" content="no-referrer">
+        <meta property="og:title" content="GVP-Datascience-club">
+        <meta property="og:description" content="Empowering students with data-driven skills and insights through hands-on projects, workshops, and collaboration at GVPCE Data Science Club.">
+        <meta property="og:url" content="https://shree-lac.vercel.app/">
+        <meta property="og:type" content="website">
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <title>DataScience Website</title>
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f4f8;
+        color: #333;
+      }
+
+      header {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        overflow: hidden; 
+      }
+      .gvpimage {
+        width: 100%;
+        height: auto;
+        margin-right: 20px;
+      }
+      .text {
+        text-align: center;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        animation: zoom-out 1.5s ease-out forwards;
+      }
+
+    
+      @keyframes zoom-out {
+        0% {
+          transform: scale(1.5); 
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1); 
+          opacity: 1;
+        }
+      }
+
+      
+      .dslogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .dslogo img {
+        max-width: 100%; 
+        height: auto;
+        max-height: 200px; 
+        margin: 0 auto; 
+        border-radius: 15px;
+        animation: zoom-out 1.5s ease-out forwards;
+      }
+
+      .dslogo h2 {
+        color: #333;
+        font-size: 28px;
+        margin-top: 10px;
+      }
+      .section-title {
+        text-align: center;
+        font-size: 28px;
+        margin: 20px 0;
+        color: #003366;
+      }
+
+      /* Styles for each section */
+      .section-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+        background-color: #f7f7f7;
+      }
+
+      .section-box {
+        background-color: white;
+        width: 400px;
+        
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 15px;
+        text-align: center;
+      }
+
+      .section-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Heading styles inside the boxes */
+      .section-box h3 {
+        font-size: 22px;
+        color: white;
+        font-weight: normal;
+        background-color: #010c17;
+        margin-bottom: 5px;
+        padding: 6px;
+        margin-top: 0px;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* Paragraph styles inside the boxes */
+      .section-box p {
+        font-size: 18px;
+        color: black;
+      }
+      .credits-block {
+        padding: 40px;
+        margin: 20px;
+        background-color: #003366;
+      }
+      .team-block {
+        text-align: center;
+        background-color: white;
+        padding: 40px;
+      }
+
+      .team-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .flip-card {
+        background-color: transparent;
+        width: 200px; 
+        height: 300px;
+        perspective: 1000px;
+        margin: 20px;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        border-radius: 10px;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      .flip-card-front {
+        background-color: #fff;
+        color: black;
+        padding: 10px;
+      }
+
+      .flip-card-front h3 {
+        margin: 10px 0;
+        font-size: 1.2em;
+      }
+
+      .flip-card-front p {
+        margin: 5px 0;
+        font-size: 1em;
+        color: #666;
+      }
+
+      .flip-card-back {
+        background-color: #003366;
+        color: white;
+        transform: rotateY(180deg);
+        padding: 10px;
+      }
+
+      .team-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+
+      .team-img-back {
+        max-width: 100%; 
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+      }
+
+      .contact-info {
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: white;
+        text-align: center;
+      }
+
+      footer {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+      .news-item, .event-item, .notice-item {
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 5px 10px rgba(83, 75, 75, 0.1);
+    
+}
+     
+@media (max-width: 777px) {
+  .flip-card-inner {
+    transform: none !important;
+    transition: none !important;
+    font-style: normal !important;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: none !important;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    backface-visibility: visible;
+    transform: none !important;
+  }
+
+  
+  .flip-card-front p {
+    display: none;
+  }
+
+
+  .flip-card-front h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: normal; 
+  }
+
+ 
+  .team-heading {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: normal;
+  }
+}
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #151d22;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #9b7fff;
+  transition : ease 0.8s;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="gvplogo">
+        <br />
+        <img src="GVPlogo.jpg" class="gvpimage" alt="GVP Logo" width="300" height="200"/>
+        <div class="text">
+          <h1>GVP DATA SCIENCE CLUB</h1>
+          <h2>In Data we trust. In Insights we Believe</h2>
+        </div>
+      </div>
+    </header>
+    <div class="dslogo">
+      <img src="DSlogo.jpg" alt="Data science club logo" class="logo" loading="lazy"/>
+      <h3
+        style="
+          text-align: center;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+            sans-serif;
+        "
+      >
+        Welcome to the GVP Data Science Club, where data drives Innovation!
+      </h3>
+    </div>
+
+    <div>     <nav>
+      <a href="#events">Upcoming Events</a>
+      <a href="#credits">Credits</a>
+      <a href="#team">Meet the Team</a>
+      <a href="#connect">Connect with Us</a>
+  </nav></div>
+      
+      <div class="section-container">
+        <!-- Latest News Section -->
+        <div class="section-box">
+          <h3>Previous Events</h3>
+        <div class="news-item"><a>03 Mar 2023: Bug Busters </a></div>
+        <div class="news-item">10 Dec 2022: Cook the code </div>
+        </div>
+
+        <!-- Upcoming Events Section -->
+        <div class="section-box">
+          <h3>Upcoming Events</h3>
+          <div class="event-item"></div>
+        <div class="event-item"></div>
+        </div>
+
+        <!-- Notice Board Section -->
+        <div class="section-box">
+          <h3>Notice Board</h3>
+          <div class="notice-item">Data Science Recruitment</div>
+        </div>
+      </div>
+    </div>
+    <section id="credits" class="credits-block parallax fade-in-slow">
+      <h2 style="text-align: center; color: white">Credits</h2>
+      <p style="color: white; text-align: center">
+        This website was created by the web design team at the GVP Data Science Club. We extend our heartfelt thanks to all contributors and mentors.
+        <br> A special thank you to Anuradha Ma'am for her unwavering support.
+      </p>
+    </section>
+    <section id="team" class="team-block">
+      <h2>Meet the Team</h2>
+      <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 30px;">
+        <div class="team-member flip-card" style="text-align: center;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Dr. Y. Anuradha</h3>
+              <p>Associate Professor and Associate Head of B.Tech CSE with Data Science</p>
+            </div>
+            <div class="flip-card-back">
+              <img src="anuradha.jpg" alt="Dr. Y. Anuradha" class="team-img-back" />
+              <div class="contact-info">
+                <h6>Email:anuradhayarlagaddag@gvpce.ac.in</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-container">
+        <div class="team-member flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>S.Bhuvana Sandhya</h3>
+              <p>President</p>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="bhuvana.jpeg"
+                alt="S.Bhuvana Sandhya"
+                class="team-img-back"
+              />
+              <div class="contact-info">
+                <p>Email:322103383013@gvpce.ac.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Pranay Varanasi</h3>
+              <p>Vice President</p>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="Pranay.jpeg"
+                alt="Pranay Varanasi"
+                class="team-img-back"
+              />
+              <div class="contact-info">
+                <p>Email:322103383048@gvpce.ac.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>K.Veneela Rishitha</h3>
+              <p>Treasurer</p>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="Rishitha.jpeg"
+                alt="K.Veneela Rishitha"
+                class="team-img-back"
+              />
+              <div class="contact-info">
+                <p>Email:322103383031@gvpce.ac.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>M.Kavya Sri</h3>
+              <p>Organizing Lead</p>
+            </div>
+            <div class="flip-card-back">
+              <img src="Kavya.jpeg" alt="M.Kavya Sri" class="team-img-back" />
+              <div class="contact-info">
+                <p>Email:322103383041@gvpce.ac.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>B.Bhanu Sri</h3>
+              <p>Web Designing Lead</p>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="Bhanu.jpeg"
+                alt="Bhanu Sri"
+                class="team-img-back"
+              />
+              <div class="contact-info">
+                <p>Email:322103383008@gvpce.ac.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>P.Vinod Kumar</h3>
+              <p>Poster Designing Lead</p>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="Vinod.jpeg"
+                alt="P.Vinod Kumar"
+                class="team-img-back"
+              />
+              <div class="contact-info">
+                <p>Email:322103383051@gvpce.ac.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Amish Satwik</h3>
+              <p>Photography Lead</p>
+            </div>
+            <div class="flip-card-back">
+              <img src="AmishSatwik.jpg" alt="Amish Satwik" class="team-img-back" />
+              <div class="contact-info">
+                <p>Email:322103383004@gvpce.ac.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Ayyappa Ganesh</h3>
+              <p>Documentation Lead</p>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="Ayyappa.jpeg"
+                alt="K.Ayyappa Ganesh"
+                class="team-img-back"
+              />
+              <div class="contact-info">
+                <p>Email:322103383034@gvpce.ac.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>CH. Sravan Kumar</h3>
+              <p>Video Editing Lead</p>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="Sravankumar.jpeg"
+                alt="CH. Sravan Kumar"
+                class="team-img-back"
+              />
+              <div class="contact-info">
+                <p>Email:322103383015@gvpce.ac.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="connect" class="footer-container">
+        <p>Connect with us:</p>
+        <a
+          href="https://www.instagram.com/datascience_club_gvpce?igsh=MXV0Z2hrOHcwa3JlZw== "
+          target="_blank"
+          class="social-link"
+          >Instagram</a
+        >
+        |
+        <a href="https://github.com/Data-Science-Club-GVPCE/ClubSite" target="_blank" class="social-link"
+          >Github</a
+        >
+        |
+        <a href="https://www.linkedin.com/company/data-science-club-gvpce-a/about/?viewAsMember=true" target="_blank" class="social-link"
+          >LinkedIn</a
+        >
+        <p>© 2024 GVP Data Science Club. All rights reserved.</p>
+        <p>Email: datascienceclub@gvpce.ac.in</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
