@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>code</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .event-description {
+            text-align: center;
+            margin: 30px auto;
+            max-width: 600px;
+            font-size: 1.2em;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slider {
+            display: flex;
+            animation: slide 9s infinite;
+        }
+
+        .slide {
+            min-width: 100%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Add keyframes for the slider animation */
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(0%); }
+            38% { transform: translateX(-100%); }
+            66% { transform: translateX(-100%); }
+            71% { transform: translateX(-200%); }
+            100% { transform: translateX(-200%); }
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .event-description {
+                font-size: 1em;
+            }
+        }
+        .event-description2 {
+            background: linear-gradient(to right, #f3f4f6, #e5e7eb); /* Light gradient background */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            margin: 20px auto;
+            max-width: 1000px; /* Limits width for readability */
+            transition: transform 0.3s ease-in-out; /* Animation effect */
+        }
+        
+        .event-description2:hover {
+            transform: scale(1.02); /* Slight scaling effect on hover */
+        }
+        
+        .event-description2 p {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6; /* Enhances readability */
+            color: #333;
+            text-align: justify;
+        }
+        
+        .event-description2 p:first-letter {
+            font-size: 1.8rem;
+            font-weight: bold; /* Style for first letter */
+            color: #1d4ed8; /* Accent color */
+        }
+        
+        @media screen and (max-width: 768px) {
+            .event-description2 {
+                padding: 20px;
+                font-size: 1rem;
+            }
+        }
+        .something {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+            background:linear-gradient(to right, #bfd0f3, #3766c5);
+            border-radius: 10px;
+        }
+        .nothing {
+            background: linear-gradient(to right, #f3f4f6, #e5e7eb); /* Light gradient background */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            margin: 20px auto;
+            max-width: 400px; /* Limits width for readability */
+            transition: transform 0.3s ease-in-out; /* Animation effect */
+        }
+        .nothing:hover {
+            transform: scale(1.02); /* Slight scaling effect on hover */
+            transition: ease 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Code Quest</h1>
+    </header>
+    <section class="event-description">
+        <p><b>Date</b>: nov-25 2024</p>
+        <p>The event aimed at the students to compete on  coding and aptitude skills to the competitive contest.!</p>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="cq1.jpeg" alt="Event Image 1">
+            </div>
+            <div class="slide">
+                <img src="cq2.png" alt="Event Image 2">
+            </div>
+            <div class="slide">
+                <img src="cq3.png" alt="Event Image 3">
+            </div>
+        </div>
+    </section>
+    <section class="event-description2">
+        <p>Department of Computer Science & Engineering (Data Science),under the esteemed guidance of Dr.Y. Anuradha, Associate Head of B.Tech CSE (DS), organized a successful event, chaired by Prof. A. B. Koteswara Rao, Principal..<br><br>
+      The session began with a time limit of 1 hour and 15 minutes for the students to compete among themselves  to write a program in the language of their choice to generate the Nth term of a given sequence or progression, like arithmetic or geometric series for 10 questions ranging from Easy, Medium, Hard and Expert.<br><br>
+        This session is an useful experience for students who want to participate in competitive Coding in future because this gives them an experience with a fun way to learn about The competitive coding contest is  perfect for coders of all levels with cash prizes for the top 3 scorers.        
+           </p>
+
+    </section>
+</body>
+
+</html>
+
